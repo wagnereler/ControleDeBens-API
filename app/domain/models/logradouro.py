@@ -7,6 +7,6 @@ Base = declarative_base()
 class Logradouro(Base):
     __tablename__ = 'logradouro'
 
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     nome = Column(String(60))
     codigo_ibge = Column(String(3))

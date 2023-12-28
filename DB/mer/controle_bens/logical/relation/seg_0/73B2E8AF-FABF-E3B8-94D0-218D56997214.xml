@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="endereco logradouo FK" directorySegmentName="seg_0" id="73B2E8AF-FABF-E3B8-94D0-218D56997214">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:13:17 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<sourcePk>F64FF6C2-16B6-0D5D-0113-67F074EFBBF6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>476067FE-50DF-A192-FBDE-DC1808F79AED</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BE68047E-5988-85AB-99D3-2C2C4252385B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

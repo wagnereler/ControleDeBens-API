@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7F3EA5BE-C851-A1FD-A887-17D2140A211F" name="empresa telefone">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:20:05 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="30CC7652-5D06-3EB8-FC6C-5218D1E5D6CC">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:20:05 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id empresa" id="EA977193-1D0F-0BE5-B83C-7872F6F53223">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:20:05 UTC</createdTime>
+<generatorID>1B992909-3684-95F5-9CA1-0F65C63668FD</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>6F5F17CC-EC91-C6E9-C6DA-E9ADB4194959</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id telefone" id="81307368-6871-8B76-6A52-938A2DAAF174">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:20:05 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id empresa2" id="B957E537-D236-99CE-A9B2-2AE1333FFC95">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:40:15 UTC</createdTime>
+<generatorID>1B992909-3684-95F5-9CA1-0F65C63668FD</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="false"/>
+</engineerTo>
+<referedAttribute>6F5F17CC-EC91-C6E9-C6DA-E9ADB4194959</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefone id" id="F0B3DA63-4CEB-BFCD-18E1-0ACBCB666068">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:40:45 UTC</createdTime>
+<generatorID>4721C87D-C306-A0A3-3E7D-AD6D6A415495</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>65421D56-E267-B28E-3E4E-3B878DCFEFF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="72AE870C-B2EB-A307-251C-DE9532CA990F" name="empresa_telefone_PK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:20:05 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>30CC7652-5D06-3EB8-FC6C-5218D1E5D6CC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

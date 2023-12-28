@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9E646A0-A5BE-F50D-FEA2-3B178A4463F0" name="papel rotina">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:20:08 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="331C65EF-CA9F-A085-66C9-8214B1221C69">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:20:17 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id papel" id="1DD4C92C-28D7-DD46-782F-BB7E26371F9B">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:20:27 UTC</createdTime>
+<generatorID>BFCFDFA6-D546-84CB-E148-6299C9A783B0</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>56421A4C-B865-D6C7-8F7A-5931315F4A9C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id usuario" id="0A20669F-606E-7069-95CC-20CD6E0F88A5">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:20:36 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id papel2" id="DACFEE0F-9D73-E3C3-FC87-E6A8A8B5225D">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:25:31 UTC</createdTime>
+<generatorID>BFCFDFA6-D546-84CB-E148-6299C9A783B0</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>56421A4C-B865-D6C7-8F7A-5931315F4A9C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rotina id" id="4A77F96B-5393-5E8C-2531-2BF0084027FE">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:25:46 UTC</createdTime>
+<generatorID>76453A56-ED59-1881-FF20-B9828FEFB3D1</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>85CDEBBB-A825-32A3-0BF5-AEBE5383BC8F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3E93E726-9DCF-A794-BC75-1919CA6A717D" name="papel_rotina_PK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:20:26 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>331C65EF-CA9F-A085-66C9-8214B1221C69</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

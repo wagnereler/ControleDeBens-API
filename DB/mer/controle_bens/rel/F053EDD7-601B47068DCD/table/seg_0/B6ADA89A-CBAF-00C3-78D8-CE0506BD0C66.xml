@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6ADA89A-CBAF-00C3-78D8-CE0506BD0C66" name="empresa">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>ECD8BF21-53D5-33AB-53EC-5CD0B051E373</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B46024F0-B30F-68D4-D214-69149E1B91AC">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>6F5F17CC-EC91-C6E9-C6DA-E9ADB4194959</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_fantasia" id="FE85CC80-0E60-CF5B-E39C-474BEDC841C5">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>904DBBFC-84C9-F5BC-57DC-926ACD2C7662</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="razao_social" id="A40F9E35-03C3-6500-71F9-013191403E7D">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>490E46E4-BDF9-828C-35A5-6D0F8A5F9E52</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cnpj" id="9D2FD713-571A-F78C-F873-EC862FD5AF63">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>3E78E86D-95C8-A64E-7495-2A414573A578</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_enderco" id="9B59785F-3080-8502-042E-3B3B5D55ABCD">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>ED86A8E4-939C-7B80-5936-957B286D502B</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CABC84E-E90A-642E-EE59-27C99A003E92" referredColumn="7FE14F98-BF79-E274-1B75-A6F31A796E3E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88CB0AE0-3FFD-21AD-2779-1B5B5657FD89" name="empresa_PK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>6FB780E6-2C2C-BBCE-69CA-F7136D23C452</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B46024F0-B30F-68D4-D214-69149E1B91AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1809026D-A685-3143-143B-942469F4E287" name="empresa_endereco_FK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>56B602ED-C908-2820-5C57-F502FFEF5939</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B59785F-3080-8502-042E-3B3B5D55ABCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

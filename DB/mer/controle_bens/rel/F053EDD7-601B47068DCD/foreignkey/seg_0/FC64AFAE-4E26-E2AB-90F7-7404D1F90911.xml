@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FC64AFAE-4E26-E2AB-90F7-7404D1F90911" containerWithKeyObject="34A048D0-FDEA-21B8-2F7C-7850A44726C8" localFKIndex="9FF5E148-E89C-BA7E-761D-8D65428F65BF" name="papel_rotina_papel_FK">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-28 20:54:31 UTC</createdTime>
+<generatorID>87AC0A61-C956-51CB-FBE7-4DC0C5FC216E</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<referredTableLongName>papel</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D2FD1C92-66A8-42DB-FE0E-497A04C9F7E2</referredTableID>
+<keyObject>0746BB4B-86D6-5F94-03B2-23C21619D173</keyObject>
+<referredKeyID>0746BB4B-86D6-5F94-03B2-23C21619D173</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

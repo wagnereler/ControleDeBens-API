@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="usuario telefone telefone FK" directorySegmentName="seg_0" id="1FDB43A4-584B-9FB3-C90F-C2D67BEA92A8">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:21:49 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<sourcePk>DF63682C-1567-12C9-4383-A0F5DDCBA5E2</sourcePk>
+<targetPk>A0B4F9D6-CA0F-84E9-34C5-50BD511C4D4E</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>602803C4-39B3-F9D2-F13A-8973963697D1</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>0FAE0A37-8303-C8A3-063E-75D8242AD985</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0CF285C1-1594-4A92-95B7-F25CC300247A" name="municipio">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 17:11:36 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="3C975F9C-D7D0-0719-14CA-4C7DE8188E5D">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 17:11:51 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id estado" id="32AF27C4-3537-5EE5-1E59-B6D12F966272">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 17:12:02 UTC</createdTime>
+<generatorID>A2B43A63-023B-434E-4DFF-E70048280ECC</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>C28E53CB-21D7-B8B0-E896-8EA4B2F45210</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="0B4589DE-DDEB-3DB5-2E73-84DE4CEBFFC7">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 17:12:28 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo ibge" id="569E9AA7-B6D0-6A8E-63BE-C4AFA31DC70C">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 17:13:01 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id estado2" id="C3FE2989-05B5-3ABD-16BB-082B482878F7">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:12:57 UTC</createdTime>
+<generatorID>A2B43A63-023B-434E-4DFF-E70048280ECC</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>C28E53CB-21D7-B8B0-E896-8EA4B2F45210</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="67929DD7-0A03-C927-02F5-0542273349C2" name="municipio PK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 17:29:30 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C975F9C-D7D0-0719-14CA-4C7DE8188E5D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

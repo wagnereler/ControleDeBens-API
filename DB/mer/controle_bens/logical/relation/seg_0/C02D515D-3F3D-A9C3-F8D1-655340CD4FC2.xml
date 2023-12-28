@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="movimentacao empresa saida FK" directorySegmentName="seg_0" id="C02D515D-3F3D-A9C3-F8D1-655340CD4FC2">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:58:50 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<sourcePk>6FB780E6-2C2C-BBCE-69CA-F7136D23C452</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ECD8BF21-53D5-33AB-53EC-5CD0B051E373</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EE1836ED-3111-F97E-5F6A-F3CA9CF0D12C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

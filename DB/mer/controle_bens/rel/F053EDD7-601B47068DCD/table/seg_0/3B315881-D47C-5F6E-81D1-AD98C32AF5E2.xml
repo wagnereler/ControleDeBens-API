@@ -1,0 +1,246 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3B315881-D47C-5F6E-81D1-AD98C32AF5E2" name="bem">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>90092169-A8AD-2EA4-6039-032FD82A6CED</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<beforeCreate><![CDATA[DROP TABLE empresa_telefone;
+DROP TABLE usuario_telefone;
+DROP TABLE log_acao;
+DROP TABLE log_acesso;
+DROP TABLE usuario_setor;
+DROP TABLE usuario_papel;
+DROP TABLE empresa_usuario;
+DROP TABLE telefone;
+DROP TABLE movimentacao;
+DROP TABLE usuario;
+DROP TABLE papel_rotina;
+DROP TABLE papel;
+DROP TABLE rotina;
+DROP TABLE bem;
+DROP TABLE motivo_baixa;
+DROP TABLE setor;
+DROP TABLE empresa;
+DROP TABLE endereco;
+DROP TABLE logradouro;
+DROP TABLE municipio;
+DROP TABLE estado;
+
+]]></beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="8CFA1C76-F4FA-C858-2850-2187C3CDCE9E">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>09CE0C00-FDCC-CB29-266D-B661645E324E</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_setor" id="6269A8F4-7B43-D7E4-B476-4F31691D4878">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>D3322774-8D89-550B-96D5-A6387639A98F</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA380C4B-6233-6AF8-DC12-3CDF6F15D0C4" referredColumn="FF4A06B2-765B-EC82-EFDD-6B0DBD0CD1B9"/>
+</associations>
+</Column>
+<Column name="id_empesa" id="81862C99-3A82-606E-037F-300E834E00E1">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>D308E26D-CFEB-DD5C-0004-83D69A2FF176</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="44CB24EC-751C-A261-33AC-53828AEED2DA" referredColumn="B46024F0-B30F-68D4-D214-69149E1B91AC"/>
+</associations>
+</Column>
+<Column name="plaqueta" id="3CFC3C9A-0E6F-9D37-CEA3-FA3ABBE9CEFA">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>23FE5D27-1513-A00F-4725-3280164D9DF2</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_compra" id="4B808EF3-7DFA-A7B4-5024-64891830088F">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>863FC14E-388E-FAA7-C904-EB172A0E9815</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_tombamento" id="EDB2E234-EFB9-E81B-2F6C-955493C403A2">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>44E79163-CC9C-E593-A2AD-A77A40F61788</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_baixa" id="F2B3AF9F-299B-F7DB-A512-CFFF28036F86">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>ECD03A9C-AA86-CD35-98F1-F34BD5F1AB90</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_compra" id="F7EBFC88-A978-D84C-DB22-969D28DD2206">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>EBDF2DDA-F65B-A01B-2203-CEFFBF1404EC</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<sourceType>Manual</sourceType>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_depreciado" id="B1A06E95-6B33-58B4-1996-2E33426299EF">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-26 17:34:40 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_contabil" id="1187C9C4-D79B-45D5-D758-05A859394934">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-26 17:36:19 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_cadastro" id="6F778747-79F1-6276-CB64-C44A832D68EB">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-28 16:58:35 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_atualizacao" id="64A31393-9305-EFCE-F600-32BC59B65E9A">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-28 16:58:35 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_motivo_baixa" id="7EE932EF-8B5C-855B-73A8-BAC457F07E58">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-28 16:58:35 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A265BE02-A211-340C-D417-DCB37D1E466D" referredColumn="BD866FB3-CE38-7A74-64B9-F3BCC6C24DBE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="799C018E-700D-83F9-9738-49209CD6E5C3" name="bem_PK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>3D9568F1-1FC7-AA17-05E3-F6BF75FB3DBB</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CFA1C76-F4FA-C858-2850-2187C3CDCE9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="021CA4F5-2DF7-1AF2-DA59-28C678BD79D2" name="bem_empresa_FK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>ADA0C26E-82C7-0448-7ECC-7AC4240A7F1C</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81862C99-3A82-606E-037F-300E834E00E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2616EE52-FB7B-5DF5-2B22-D302FF7A62AC" name="bem_setor_FK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>534F9A6F-BD41-50B3-FE49-6C63EF7D0B92</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6269A8F4-7B43-D7E4-B476-4F31691D4878"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACD6EDD8-7A2A-017A-A905-4CE679AF3DA5" name="bem_motivo_baixa_FK">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-28 17:00:33 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EE932EF-8B5C-855B-73A8-BAC457F07E58"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

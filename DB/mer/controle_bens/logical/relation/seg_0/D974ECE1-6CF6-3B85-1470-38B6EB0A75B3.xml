@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="empresa usuario usuario FK" directorySegmentName="seg_0" id="D974ECE1-6CF6-3B85-1470-38B6EB0A75B3">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:44:36 UTC</createdTime>
+<generatorID>F9363CB0-ED10-270C-7ED2-823E9B8ED672</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<sourcePk>E5DF2068-6450-C703-9BAF-5D3BADAC7E3D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A458780-9882-3521-7C78-AE196453A612</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5779DE9B-3723-4951-B7B3-317D0F578270</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

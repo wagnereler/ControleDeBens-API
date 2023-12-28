@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E37A97A-2D58-ACD6-7673-3A0E683234F6" name="telefone">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>0FAE0A37-8303-C8A3-063E-75D8242AD985</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="FE9F04E0-2263-125A-80EB-C34F4B77462F">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>65421D56-E267-B28E-3E4E-3B878DCFEFF3</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ddi" id="9EE1696F-66DB-0E46-3EAC-FA5FACD7BAB8">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>1302511C-6C30-F2C1-B863-5F29AA190BD0</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<defaultValue>+55</defaultValue>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dd" id="16C5FB9A-22F2-7B2D-7DEC-AFEEF548F79A">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>92B943E3-EAE2-2D53-80D0-4251CC0B86EE</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="B9B23277-2AFF-192F-48F9-CA977B39FB6B">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>B821580B-8E0A-3686-AD2F-B084BFFD00E9</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="7B311810-A07C-A6F9-E8BB-928BA8A21D70">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>B565F940-59A6-4BE7-0A43-8B23B83A1818</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BDF15EA6-D68B-EC7F-71C8-0EE2EFAAA324" name="telefone_PK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>A0B4F9D6-CA0F-84E9-34C5-50BD511C4D4E</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE9F04E0-2263-125A-80EB-C34F4B77462F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

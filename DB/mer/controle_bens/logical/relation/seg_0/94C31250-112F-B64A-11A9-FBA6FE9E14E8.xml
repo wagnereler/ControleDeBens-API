@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="movimentacao usuario FK" directorySegmentName="seg_0" id="94C31250-112F-B64A-11A9-FBA6FE9E14E8">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:56:17 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<sourcePk>E5DF2068-6450-C703-9BAF-5D3BADAC7E3D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A458780-9882-3521-7C78-AE196453A612</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EE1836ED-3111-F97E-5F6A-F3CA9CF0D12C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

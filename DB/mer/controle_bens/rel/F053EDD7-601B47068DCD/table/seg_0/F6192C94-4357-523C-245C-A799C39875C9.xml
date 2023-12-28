@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6192C94-4357-523C-245C-A799C39875C9" name="motivo_baixa">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-28 16:58:51 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="BD866FB3-CE38-7A74-64B9-F3BCC6C24DBE">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-28 16:59:27 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="motivo" id="773B2398-5A7A-0597-901C-6E5CA8006206">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-28 17:00:08 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFB80A41-7D66-706A-903A-A37E6F17355C" name="motivo_baixa_PK">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-28 16:59:27 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD866FB3-CE38-7A74-64B9-F3BCC6C24DBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

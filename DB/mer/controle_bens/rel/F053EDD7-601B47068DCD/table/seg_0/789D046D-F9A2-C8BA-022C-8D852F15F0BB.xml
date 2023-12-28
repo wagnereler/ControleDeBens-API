@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="789D046D-F9A2-C8BA-022C-8D852F15F0BB" name="municipio">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>0CF285C1-1594-4A92-95B7-F25CC300247A</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="83DB87BD-7F02-5F42-6AE5-A3BE10CA647A">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>3C975F9C-D7D0-0719-14CA-4C7DE8188E5D</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_estado" id="30801F14-2D55-4E1C-DA43-202F16F5A4F3">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>32AF27C4-3537-5EE5-1E59-B6D12F966272</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1ADCC34D-8750-F505-F768-5803A30CF710" referredColumn="DD1F4B3F-BEAE-6E15-016E-C47C23756670"/>
+</associations>
+</Column>
+<Column name="nome" id="85D7E3D9-7D33-89CF-196B-5BF8B6A7713E">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>0B4589DE-DDEB-3DB5-2E73-84DE4CEBFFC7</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_ibge" id="78CD39FE-E056-EBC4-43AF-B8BC7FFF8E73">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>569E9AA7-B6D0-6A8E-63BE-C4AFA31DC70C</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C103E4B7-49BA-A4AA-17B7-DACB7954F55C" name="municipio_PK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>67929DD7-0A03-C927-02F5-0542273349C2</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83DB87BD-7F02-5F42-6AE5-A3BE10CA647A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71ADF979-89B6-A538-622D-3FB98DD6A824" name="municipio_estado_FK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>A2B43A63-023B-434E-4DFF-E70048280ECC</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30801F14-2D55-4E1C-DA43-202F16F5A4F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

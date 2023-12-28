@@ -1,19 +1,15 @@
-from sqlalchemy import create_engine, MetaData
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
+# app/infrastructure/database.py
+from sqlalchemy import MetaData
+
+from app.services.database_service import DatabaseService
 
 class Database:
-    def __init__(self, database_url):
-        self.engine = create_engine(database_url)
-        self.metadata = MetaData()
-        self.Base = automap_base(metadata=self.metadata)
-        self.session = Session(self.engine)
+    def __init__(self):
+        self.service = DatabaseService()
+        self.metadata = MetaData(bind=self.service.engine)
 
-    def reflect_database(self):
-        self.metadata.reflect(bind=self.engine)
+    def create_tables(self):
+        self.service.create_tables()
 
-    def prepare_models(self):
-        self.Base.prepare()
-
-    def get_model_class(self, table_name):
-        return getattr(self.Base.classes, table_name, None)
+    def get_session(self):
+        return self.service.get_session()

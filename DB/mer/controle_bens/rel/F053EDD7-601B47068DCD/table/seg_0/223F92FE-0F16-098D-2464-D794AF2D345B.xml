@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="223F92FE-0F16-098D-2464-D794AF2D345B" name="setor">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>EB09F45A-C8DA-1D6F-AE53-827BDEB007B4</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="FF4A06B2-765B-EC82-EFDD-6B0DBD0CD1B9">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>CDA79ABB-3346-2E6A-E94E-ACA002962ED8</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_empresa" id="72861592-8011-4D7E-2C15-331EE4C12810">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>284E13C0-5A4B-0A19-9D4C-A1711D7C93E4</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF5C0FD9-E2AB-EDE3-055B-4FA6255C9D95" referredColumn="B46024F0-B30F-68D4-D214-69149E1B91AC"/>
+</associations>
+</Column>
+<Column name="nome" id="7488209A-A93E-29F2-760D-73018BF0AAE3">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>DED97B3D-A5EF-60A8-CC86-CF8C6695161F</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70D97FCC-04F1-72AC-00CF-11BC3D7BDE39" name="setor_PK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>0CAEBB0F-2090-B08F-4CF1-53E26A897A05</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF4A06B2-765B-EC82-EFDD-6B0DBD0CD1B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AF87F7D-B9E5-5F78-65DE-792BD4A006B1" name="setor_empresa_FK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>D8904615-43BA-E06F-BC37-BE90DD87A621</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72861592-8011-4D7E-2C15-331EE4C12810"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

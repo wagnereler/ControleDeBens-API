@@ -1,0 +1,28 @@
+id,codigo_ibge,nome,uf
+11,11,Rondônia,RO
+12,12,Acre,AC
+13,13,Amazonas,AM
+14,14,Roraima,RR
+15,15,Pará,PA
+16,16,Amapá,AP
+17,17,Tocantins,TO
+21,21,Maranhão,MA
+22,22,Piauí,PI
+23,23,Ceará,CE
+24,24,Rio Grande do Norte,RN
+25,25,Paraíba,PB
+26,26,Pernambuco,PE
+27,27,Alagoas,AL
+28,28,Sergipe,SE
+29,29,Bahia,BA
+31,31,Minas Gerais,MG
+32,32,Espírito Santo,ES
+33,33,Rio de Janeiro,RJ
+35,35,São Paulo,SP
+41,41,Paraná,PR
+42,42,Santa Catarina,SC
+43,43,Rio Grande do Sul,RS
+50,50,Mato Grosso do Sul,MS
+51,51,Mato Grosso,MT
+52,52,Goiás,GO
+53,53,Distrito Federal,DF

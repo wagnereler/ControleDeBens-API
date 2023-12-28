@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="endereco municipio FK" directorySegmentName="seg_0" id="18BD5100-83FA-AB74-98B9-4309A099CB96">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:11:38 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<sourcePk>67929DD7-0A03-C927-02F5-0542273349C2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0CF285C1-1594-4A92-95B7-F25CC300247A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BE68047E-5988-85AB-99D3-2C2C4252385B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,224 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BE68047E-5988-85AB-99D3-2C2C4252385B" name="endereco">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:56:32 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="F3D72FCB-4868-100B-6A0C-C2FCD34594C1">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:56:42 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id empresa" id="6A503750-1C59-392B-6C90-7854274FC9DF">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:56:53 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id usuario" id="38A09B83-567A-EC2B-2067-72C0500F6C86">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:57:23 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id muncipo" id="8022655E-80B6-A22D-CC77-72D012C7D963">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:57:37 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id estado" id="2905DC19-5D5D-98F0-FE48-C15FCFE59AD3">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:57:51 UTC</createdTime>
+<generatorID>A961AFA1-4F46-ED64-2A49-199195295D70</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>C28E53CB-21D7-B8B0-E896-8EA4B2F45210</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id logradouro" id="758C88D0-03FD-AF1B-A372-BC9CD9E17CAB">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:57:56 UTC</createdTime>
+<generatorID>73B2E8AF-FABF-E3B8-94D0-218D56997214</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>66526DB7-5CF9-854B-C24D-31ABED377F28</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="endereco" id="A5737263-49C8-E2A1-EB48-DA06D93079C2">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:58:33 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="7573C97C-7A48-BF07-E073-543BFF432D60">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:59:20 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="complemento" id="54EBF462-8BD2-9F92-7E6E-F8D207378FDD">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:59:26 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bairro" id="179FC53B-6C44-27A0-7712-71C832221A44">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:59:34 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cep" id="9F16D57C-6629-B19C-8BD1-F5D50981B47B">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 16:59:40 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id muncipo2" id="0CD6566B-6FF0-597F-701B-595DDD9353EC">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:11:38 UTC</createdTime>
+<generatorID>18BD5100-83FA-AB74-98B9-4309A099CB96</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>3C975F9C-D7D0-0719-14CA-4C7DE8188E5D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id estado2" id="F88FBB7D-92D8-FC07-5FFB-EC64B23DFDB7">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:12:10 UTC</createdTime>
+<generatorID>A961AFA1-4F46-ED64-2A49-199195295D70</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>C28E53CB-21D7-B8B0-E896-8EA4B2F45210</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id logradouro2" id="9DE1517D-D000-93A0-16DB-8092F04B41C1">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:13:17 UTC</createdTime>
+<generatorID>73B2E8AF-FABF-E3B8-94D0-218D56997214</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<referedAttribute>66526DB7-5CF9-854B-C24D-31ABED377F28</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="24EBFE5D-48B8-62BF-EF6E-F62A886BC3FB" name="endereco PK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-23 17:29:26 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F3D72FCB-4868-100B-6A0C-C2FCD34594C1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

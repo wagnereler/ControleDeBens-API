@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="usuario setor setor FK" directorySegmentName="seg_0" id="AFCC8398-C9F6-FA93-B624-6F3110EFA7C9">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:44:16 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<sourcePk>0CAEBB0F-2090-B08F-4CF1-53E26A897A05</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EB09F45A-C8DA-1D6F-AE53-827BDEB007B4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2625CFFF-EF3F-921F-9EEE-1626CAA6BD45</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

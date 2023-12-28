@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="usuario papel papel FK" directorySegmentName="seg_0" id="2CA2032C-EE8D-813D-89FD-FB0497260B9A">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:09:46 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<sourcePk>87AC0A61-C956-51CB-FBE7-4DC0C5FC216E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>88C4DC4F-6586-22BB-A997-70FC7B3B9B21</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D2CF86F4-6943-72D4-39DD-AC1041B5A057</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

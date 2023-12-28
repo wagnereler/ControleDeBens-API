@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C69D8C4A-1602-BFED-E81B-E78FE3277873" name="usuario">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>2A458780-9882-3521-7C78-AE196453A612</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<deprecated>true</deprecated>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="36099D58-6258-616E-C709-008CCF81D6ED">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>7EC9596F-E2FA-4219-3026-939414E5C33B</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="E8DEF5BE-40E6-B597-24D1-AB0E92243C8B">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>249EE127-7F07-6890-294E-9DF54A31E64D</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cpf" id="89E3A849-88E9-18B6-5768-FC6B3956C656">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>F28AEF1F-09D9-3ECE-CF4C-CDFE0233774F</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario" id="189D7F40-ED91-6385-6A33-9ADD47C53284">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>80E092E5-E991-400D-95FA-765A64676695</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="61901CCD-27E4-B931-2A24-744FB3948DB5">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>09004E8C-D123-D0D7-5234-B943157FCEB8</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_endereco" id="4F469FB8-1FE8-4A26-6C95-014564F60D56">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>FE7E4EF5-828F-42D6-87A4-6BA538BC97EE</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9559C5FF-F78A-EA46-379C-8F74C2248958" referredColumn="7FE14F98-BF79-E274-1B75-A6F31A796E3E"/>
+</associations>
+</Column>
+<Column name="data_cadastro" id="044A3B34-D67D-E1A9-9A5C-183CA7B5D4EC">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>EC41B9AF-9F8E-C93E-27B8-D792A4DF8F4A</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_atualizacao" id="C20754E3-D617-E7FC-9DFB-8FDE4F5B550A">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>613A4FDA-EFCF-72A0-62B1-FB3064073E94</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A62C6B3-7A54-9D91-9786-4051667B9EA5" name="usuario_PK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-22 19:08:28 UTC</createdTime>
+<generatorID>E5DF2068-6450-C703-9BAF-5D3BADAC7E3D</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36099D58-6258-616E-C709-008CCF81D6ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBC1FE01-140A-2D18-844F-364F58AFCAA2" name="un_usuario_cpf">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-24 22:47:04 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89E3A849-88E9-18B6-5768-FC6B3956C656"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3E16363-89EA-E5B9-C365-2C914AE49E25" name="un_usuario_cpf_usuaro">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-26 20:06:24 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="189D7F40-ED91-6385-6A33-9ADD47C53284"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8966385-8D16-4F3F-E95E-54F0ACC86A46" name="un_usuario_email">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-26 20:06:24 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61901CCD-27E4-B931-2A24-744FB3948DB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BFBD701-47D6-9596-6E19-97FB0D756EEC" name="usuario_endereco_FK">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 14:40:21 UTC</createdTime>
+<generatorID>5CFC6AB0-7A9A-A6EE-5185-54E6E0A0A56A</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F469FB8-1FE8-4A26-6C95-014564F60D56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

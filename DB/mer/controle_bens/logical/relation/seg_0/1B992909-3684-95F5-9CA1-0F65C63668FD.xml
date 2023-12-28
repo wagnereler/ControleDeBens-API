@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="empresa telefone empresa FK" directorySegmentName="seg_0" id="1B992909-3684-95F5-9CA1-0F65C63668FD">
+<createdBy>wagner</createdBy>
+<createdTime>2023-12-24 13:40:15 UTC</createdTime>
+<ownerDesignName>controle_bens</ownerDesignName>
+<engineerTo>
+<item key="F053EDD7-B10D-2763-5563-601B47068DCD" value="true"/>
+</engineerTo>
+<sourcePk>6FB780E6-2C2C-BBCE-69CA-F7136D23C452</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ECD8BF21-53D5-33AB-53EC-5CD0B051E373</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7F3EA5BE-C851-A1FD-A887-17D2140A211F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

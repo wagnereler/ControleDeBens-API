@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FD2F525D-3EE3-BACE-A7BC-474AB75B7EAF" containerWithKeyObject="CC1DA7ED-CB90-7C68-1F4C-EF336ACAAC4C" localFKIndex="76C0649E-2388-9416-A176-E49245C8FBCE" name="movimentacao_setor_saida_FK">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-24 22:32:44 UTC</createdTime>
+<generatorID>0CAEBB0F-2090-B08F-4CF1-53E26A897A05</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<referredTableLongName>setor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>223F92FE-0F16-098D-2464-D794AF2D345B</referredTableID>
+<keyObject>70D97FCC-04F1-72AC-00CF-11BC3D7BDE39</keyObject>
+<referredKeyID>70D97FCC-04F1-72AC-00CF-11BC3D7BDE39</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

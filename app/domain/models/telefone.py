@@ -9,7 +9,7 @@ metadata = Base.metadata
 class Telefone(Base):
     __tablename__ = 'telefone'
 
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     ddi = Column(String(4), server_default=text("'+55'::character varying"))
     dd = Column(String(2))
     numero = Column(String(9))

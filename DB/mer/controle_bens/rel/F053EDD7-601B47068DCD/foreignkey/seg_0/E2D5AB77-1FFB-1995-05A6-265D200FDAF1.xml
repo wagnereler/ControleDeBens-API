@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E2D5AB77-1FFB-1995-05A6-265D200FDAF1" containerWithKeyObject="34A048D0-FDEA-21B8-2F7C-7850A44726C8" localFKIndex="73FC8E10-7683-DD5D-3087-351AD9D2A9B6" name="papel_rotina_rotina_FK">
+<createdBy>wagne</createdBy>
+<createdTime>2023-12-28 20:54:44 UTC</createdTime>
+<generatorID>A86005F9-2A0D-9A5D-903A-2ABB6F206234</generatorID>
+<ownerDesignName>controle_bens</ownerDesignName>
+<referredTableLongName>rotina</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D3589AA9-24CF-BEFA-773B-9CE9A634DEAD</referredTableID>
+<keyObject>70493EA1-B134-A16A-5719-C01A6980C159</keyObject>
+<referredKeyID>70493EA1-B134-A16A-5719-C01A6980C159</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -9,5 +9,5 @@ metadata = Base.metadata
 class Rotina(Base):
     __tablename__ = 'rotina'
 
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     nome = Column(String(60))
