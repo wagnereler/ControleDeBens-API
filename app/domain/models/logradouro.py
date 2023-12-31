@@ -1,15 +1,30 @@
 # coding: utf-8
 # app/domain/models/logradouro.py
-from sqlalchemy import Column, Integer, String, TIMESTAMP, BOOLEAN
-from sqlalchemy.ext.declarative import declarative_base
 
-Base = declarative_base()
+from datetime import datetime
+from sqlalchemy import Column, String, Boolean, DateTime, Integer
+from app.infrastructure.persistence.sqlalchemy.database import Database
 
-class Logradouro(Base):
+class Logradouro(Database):
     __tablename__ = 'logradouro'
 
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    nome = Column(String(60))
-    ativo = Column(BOOLEAN)
-    data_cadastro = Column(TIMESTAMP)
-    data_alteracao = Column(TIMESTAMP)
+    id = Column(Integer, primary_key=True, index=True)
+    nome = Column(String, index=True)
+    ativo = Column(Boolean)
+    data_cadastro = Column(DateTime)
+    data_alteracao = Column(DateTime)
+
+    def __init__(self, nome, ativo, data_cadastro=None, data_alteracao=None):
+        self.nome = nome
+        self.ativo = ativo
+        self.data_cadastro = data_cadastro or datetime.now()
+        self.data_alteracao = data_alteracao or datetime.now()
+
+    def serialize(self):
+        return {
+            'id': self.id,
+            'nome': self.nome,
+            'ativo': self.ativo,
+            'data_cadastro': str(self.data_cadastro),
+            'data_alteracao': str(self.data_alteracao),
+        }

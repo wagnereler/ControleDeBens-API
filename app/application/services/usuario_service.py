@@ -1,8 +1,6 @@
 # app/application/services/usuario_service.py
-
-from app.infrastructure.database import Database
 from app.domain.models.usuario import Usuario
-from sqlalchemy.orm import Session
+from app.infrastructure.persistence.sqlalchemy.database import Database
 
 class UsuarioService:
     def __init__(self):
@@ -19,7 +17,7 @@ class UsuarioService:
         )
 
         # Adicione o novo usuário à sessão e persista no banco de dados
-        with self.db.get_session() as session:  # Garante o uso adequado da sessão
+        with self.db.get_session() as session:
             session.add(novo_usuario)
             session.commit()
 

@@ -1,4 +1,5 @@
 # coding: utf-8
+# app/domain/models/usuario.py
 from sqlalchemy import Column, Integer, String, Date, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base

@@ -1,4 +1,5 @@
 # coding: utf-8
+# app/domain/models/telefone.py
 from sqlalchemy import Column, Integer, String, text
 from sqlalchemy.ext.declarative import declarative_base
 

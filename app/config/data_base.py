@@ -1,4 +1,4 @@
-#app.config.data_base.py
+#app/config/data_base.py
 AMBIENTE = 'DEV'
 
 CONFIG_POSTGRES = {

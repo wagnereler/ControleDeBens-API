@@ -1,4 +1,5 @@
 # coding: utf-8
+# app/domain/models/municipio.py
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base

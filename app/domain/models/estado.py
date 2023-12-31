@@ -1,4 +1,5 @@
 # coding: utf-8
+#app/domain/models/estado.py
 from sqlalchemy import Column, Integer, CHAR, String
 from sqlalchemy.ext.declarative import declarative_base
 
