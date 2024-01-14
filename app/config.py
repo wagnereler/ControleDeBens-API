@@ -1,0 +1,20 @@
+#app/config.py
+from os import environ
+
+#basedir = os.path.abspath(os.path.dirname(__file__))
+
+class Config:
+    SECRET_KEY = environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = environ.get('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:dbamv@192.168.1.99:5432/controle_bens')
+    SQLALCHEMY_TRACK_MODIFICATIONS = environ.get('SQLALCHEMY_TRACK_MODIFICATIONS')
+    JWT_SECRET_KEY = environ.get('JWT_SECRET_KEY')
+    JWT_ACCESS_TOKEN_EXPIRES = environ.get('JWT_SECRET_KEY')
+    FLASK_APP = environ.get('FLASK_APP')
+    FLASK_DEBUG = environ.get('FLASK_DEBUG')
+
+"""    CASO TENHA NECESSIDADE DE USAR OUTRO BANCOS PARA CONEXÃO
+    SQLALCHEMY_BINDS = {
+        'outro_banco': os.environ.get('OUTRO_BANCO_URI', 'sqlite:///outro_banco.db'),
+        'terceiro_banco': os.environ.get('TERCEIRO_BANCO_URI', 'postgresql://usuario:senha@localhost/terceiro_banco')
+    }
+"""

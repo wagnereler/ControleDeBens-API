@@ -1,8 +1,9 @@
-#requirements.txt
-Flask
+flask
+flask-restx
+flask_jwt_extended
+flask_migrate
 flask_sqlalchemy
-SQLAlchemy
 psycopg2-binary
-sqlacodegen
 pytest
-pytest-sqlalchemy
+python-dotenv
+sqlalchemy
