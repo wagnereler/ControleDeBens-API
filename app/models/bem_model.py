@@ -13,6 +13,7 @@ class Bem(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     id_setor = Column(ForeignKey(Setor.id), nullable=False)
     id_empresa = Column(ForeignKey(Empresa.id), nullable=False)
+    nome = Column(String(100))
     plaqueta = Column(String(30))
     data_compra = Column(Date)
     data_tombamento = Column(Date)

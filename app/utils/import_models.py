@@ -19,9 +19,6 @@ from app.models.usuario_model import Usuario
 from app.models.usuario_papel_model import UsuarioPapel
 from app.models.usuario_setor_model import UsuarioSetor
 from app.models.usuario_telefone_model import UsuarioTelefone
-
-
-
 class ImportModels:
     bem = Bem
     empresa = Empresa
