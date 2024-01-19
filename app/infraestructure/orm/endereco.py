@@ -3,7 +3,7 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db
-from app.infraestructure.orm.logradouro_model import Logradouro
+from app.infraestructure.orm.logradouro import Logradouro
 from app.infraestructure.orm.municipio import Municipio
 from app.infraestructure.orm.estado import Estado
 
@@ -16,11 +16,11 @@ class Endereco(Base):
     id_municipio = Column(ForeignKey(Municipio.id), nullable=False)
     id_estado = Column(ForeignKey(Estado.id), nullable=False)
     id_logradouro = Column(ForeignKey(Logradouro.id), nullable=False)
-    endereco = Column(String(60))
-    numero = Column(String(10))
+    endereco = Column(String(60), nullable=False)
+    numero = Column(String(10), nullable=False)
     complemento = Column(String(60))
-    bairro = Column(String(60))
-    cep = Column(String(8))
+    bairro = Column(String(60), nullable=False)
+    cep = Column(String(8), nullable=False)
 
     estado = relationship(Estado)
     logradouro = relationship(Logradouro)

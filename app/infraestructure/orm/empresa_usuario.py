@@ -14,7 +14,6 @@ class EmpresaUsuario(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     id_empresa = Column(ForeignKey(Empresa.id), nullable=False)
     id_usuario = Column(ForeignKey(Usuario.id), nullable=False)
-    empresa_id1 = Column(Integer, nullable=False)
 
     empresa = relationship(Empresa)
     usuario = relationship(Usuario)

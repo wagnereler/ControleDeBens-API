@@ -12,7 +12,7 @@ class Setor(Base):
 
     id = Column(Integer, primary_key=True)
     id_empresa = Column(ForeignKey(Empresa.id), nullable=False)
-    nome = Column(String(100))
+    nome = Column(String(100), nullable=False)
 
     empresa = relationship(Empresa)
 

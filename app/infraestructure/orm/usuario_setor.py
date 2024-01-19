@@ -11,7 +11,7 @@ Base = db.Model
 class UsuarioSetor(Base):
     __tablename__ = 'usuario_setor'
 
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     id_setor = Column(ForeignKey(Setor.id), nullable=False)
     id_usuario = Column(ForeignKey(Usuario.id), nullable=False)
 

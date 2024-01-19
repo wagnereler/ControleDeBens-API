@@ -11,9 +11,9 @@ class Empresa(Base):
     __tablename__ = 'empresa'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    nome_fantasia = Column(String(60))
-    razao_social = Column(String(100))
-    cnpj = Column(String(14))
+    nome_fantasia = Column(String(60), nullable=False)
+    razao_social = Column(String(100), nullable=False)
+    cnpj = Column(String(14), unique=True, nullable=False)
     id_endereco = Column(ForeignKey(Endereco.id), nullable=False)
 
     endereco = relationship(Endereco)

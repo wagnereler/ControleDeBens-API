@@ -12,7 +12,7 @@ class Municipio(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     id_estado = Column(ForeignKey(Estado.id), nullable=False)
-    nome = Column(String(100))
-    codigo_ibge = Column(String(8))
+    nome = Column(String(100), nullable=False)
+    codigo_ibge = Column(String(8), nullable=False)
 
     estado = relationship(Estado)

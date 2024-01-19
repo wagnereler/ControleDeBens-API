@@ -15,8 +15,8 @@ class Usuario(Base):
     cpf = Column(String(11), nullable=False, unique=True)
     usuario = Column(String(40), nullable=False, unique=True)
     email = Column(String(60), nullable=False, unique=True)
-    data_cadastro = Column(Date)
-    data_atualizacao = Column(Date)
+    data_cadastro = Column(Date, nullable=False)
+    data_atualizacao = Column(Date, nullable=False)
     id_endereco = Column(ForeignKey(Endereco.id), nullable=False)
 
     endereco = relationship(Endereco)

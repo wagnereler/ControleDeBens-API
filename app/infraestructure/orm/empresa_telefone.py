@@ -13,8 +13,7 @@ class EmpresaTelefone(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     id_empresa = Column(ForeignKey(Empresa.id), nullable=False)
-    id_telefone = Column(Integer)
-    telefone_id = Column(ForeignKey(Telefone.id), nullable=False)
+    id_telefone = Column(ForeignKey(Telefone.id), nullable=False)
 
     empresa = relationship(Empresa)
     telefone = relationship(Telefone)

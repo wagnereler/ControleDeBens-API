@@ -1,0 +1,25 @@
+Single-database configuration for Flask.
+
+--se for preciso dropar as tabelas está é a ordem correta
+
+drop table empresa_telefone;
+drop table usuario_telefone;
+drop table empresa_usuario;
+drop table papel_rotina;
+drop table usuario_papel;
+drop table usuario_setor;
+drop table log_acesso;
+drop table log_acao;
+drop table rotina;
+drop table telefone;
+drop table movimentacao;
+drop table bem;
+drop table setor;
+drop table empresa;
+drop table usuario;
+drop table endereco;
+drop table logradouro;
+drop table municipio;
+drop table estado;
+drop table papel;
+drop table alembic_version;

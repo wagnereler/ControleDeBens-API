@@ -7,7 +7,7 @@ from app.infraestructure.orm.endereco import Endereco
 from app.infraestructure.orm.estado import Estado
 from app.infraestructure.orm.log_acao import LogAcao
 from app.infraestructure.orm.log_acesso import LogAcesso
-from app.infraestructure.orm.logradouro_model import Logradouro
+from app.infraestructure.orm.logradouro import Logradouro
 from app.infraestructure.orm.movimentacao import Movimentacao
 from app.infraestructure.orm.municipio import Municipio
 from app.infraestructure.orm.papel import Papel

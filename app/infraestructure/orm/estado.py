@@ -9,6 +9,6 @@ class Estado(Base):
     __tablename__ = 'estado'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    uf = Column(CHAR(2))
-    nome = Column(String(40))
-    codigo_ibge = Column(String(2))
+    uf = Column(CHAR(2), nullable=False)
+    nome = Column(String(40), nullable=False)
+    codigo_ibge = Column(String(2), nullable=False)

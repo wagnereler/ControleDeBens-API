@@ -15,11 +15,11 @@ class Movimentacao(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     id_bem = Column(ForeignKey(Bem.id), nullable=False)
-    data_movimentacao = Column(Date)
-    id_setor_saida = Column(ForeignKey(Setor.id), nullable=False)
-    id_setor_entrada = Column(ForeignKey(Setor.id), nullable=False)
-    id_empresa_saida = Column(ForeignKey(Empresa.id), nullable=False)
-    id_empresa_entrada = Column(ForeignKey(Empresa.id), nullable=False)
+    data_movimentacao = Column(Date, nullable=False)
+    id_setor_saida = Column(ForeignKey(Setor.id), nullable=True)
+    id_setor_entrada = Column(ForeignKey(Setor.id), nullable=True)
+    id_empresa_saida = Column(ForeignKey(Empresa.id), nullable=True)
+    id_empresa_entrada = Column(ForeignKey(Empresa.id), nullable=True)
     id_usuario = Column(ForeignKey(Usuario.id), nullable=False)
 
     bem = relationship(Bem)
