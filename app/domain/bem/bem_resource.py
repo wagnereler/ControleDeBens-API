@@ -10,7 +10,7 @@ from app.domain.bem import bens_ns
 @bens_ns.route('/')
 @bens_ns.doc({'bens'})
 class Bem(Resource):
-
+    @bens_ns.expect(obter_bens_model)
     @bens_ns.marshal_list_with(obter_bens_model)
     def get(self):
         bens = obter_bens()

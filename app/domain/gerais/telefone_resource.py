@@ -5,11 +5,10 @@ from flask_restx import Resource
 from app.domain.gerais.telefone_service import inserir_telefone, obter_telefones
 from app.domain.gerais.telefone_model import inserir_telefone_model, obter_telefones_model
 from app.domain.gerais import gerais_ns
-from app.domain import api_ms
 
 @gerais_ns.route('/telefone')
 @gerais_ns.doc({'telefone'})
-class TelefoneResource(Resource):  # Renomear a classe para TelefoneResource
+class Telefone(Resource):  # Renomear a classe para TelefoneResource
 
     @gerais_ns.marshal_list_with(obter_telefones_model)
     def get(self):

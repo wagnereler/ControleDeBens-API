@@ -3,8 +3,7 @@ from flask import Flask
 from app.utils.extensions import api, db, jwt, migrate
 from app.utils.import_models import ImportModels
 from app.config import Config
-from app.domain import api_ms
-from app.utils.import_resource import bens_ns, empresa_ns, gerais_ns
+from app.utils.import_resource import api_ms, bens_ns, empresa_ns, gerais_ns
 
 
 app = Flask(__name__)
