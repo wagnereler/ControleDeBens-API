@@ -1,7 +1,5 @@
-from app.resources import (
-    telefone_resource,
-    bem_resource)
+# app/utils/import_resource.py
+from app.domain.bem.bem_resource import bens_ns
+from app.domain.empresa.empresa_resource import empresa_ns
+from app.domain.gerais.telefone_resource import gerais_ns
 
-class ImportResource:
-    telefone = telefone_resource
-    bem = bem_resource
