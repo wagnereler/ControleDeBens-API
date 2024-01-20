@@ -1,5 +1,5 @@
 # coding: utf-8
-#app/infraestructure/endereco.py
+#app/infraestructure/orm/endereco.py
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db

@@ -11,7 +11,7 @@ class Telefone(Base):
     __tablename__ = 'telefone'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    ddi = Column(String(4), server_default=text("'+55'::character varying"), nullable=False)
+    ddi = Column(String(4), nullable=False)
     ddd = Column(String(2), nullable=False)
     numero = Column(String(9), nullable=False)
     tipo = Column(Integer, nullable=False)
