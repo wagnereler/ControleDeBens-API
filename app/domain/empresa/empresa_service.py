@@ -1,4 +1,4 @@
-#app/services/empresa_service.py
+#app/domain/empresa/empresa_service.py
 from app.infraestructure.orm.empresa import Empresa
 from app.utils.extensions import db
 from datetime import datetime, date

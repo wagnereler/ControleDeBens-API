@@ -1,3 +1,4 @@
+#app/domain/empresa/empresa_resource.py
 from flask import request
 from flask_jwt_extended import jwt_required
 from flask_restx import Namespace, Resource, fields
@@ -16,13 +17,14 @@ class Bem(Resource):
         empresa = obter_empresas()
         return empresa
 
-    @empresa_ns.expect(obter_empresa_model)
+    @empresa_ns.expect(inserir_empresa_model)
     @empresa_ns.marshal_with(inserir_empresa_model, code=201)
     def post(self):
+
         data = request.json
         empresa = inserir_empresa(data['nome_fantasia'],
-                        data['razao_social'],
-                        data['cnpj'],
-                        data['id_endereco']
-                        )
+                                  data['razao_social'],
+                                  data['cnpj'],
+                                  data['id_endereco']
+                                  )
         return empresa, 201
