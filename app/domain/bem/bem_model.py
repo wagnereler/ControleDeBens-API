@@ -1,7 +1,7 @@
 from flask_restx import fields
 from app.domain import api_ms
-from app.domain.empresa.empresa_model import inserir_empresa_model
-from app.domain.empresa.setor_model import inserir_setor
+from app.domain.empresa.empresa_model import obter_empresa_model
+from app.domain.empresa.setor_model import obter_setor_model
 
 inserir_bem_model = api_ms.model('Bem', {
     'id': fields.Integer(readonly=True),
@@ -19,8 +19,8 @@ inserir_bem_model = api_ms.model('Bem', {
 
 obter_bens_model = api_ms.model('Obter Bem', {
     'id': fields.Integer(readonly=True),
-    'id_empresa': fields.Nested(inserir_empresa_model, attribute='empresa'),
-    'id_setor': fields.Nested(inserir_setor, attribute='setor'),
+    'empresa': fields.Nested(obter_empresa_model, attribute='empresa'),
+    'setor': fields.Nested(obter_setor_model, attribute='setor'),
     'nome': fields.String(required=True),
     'plaqueta': fields.String(required=True),
     'data_compra': fields.Date(required=True),

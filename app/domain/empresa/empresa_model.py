@@ -18,3 +18,10 @@ obter_empresa_model = api_ms.model('Obter Empresa', {
     'razao_social': fields.String(required=True),
     'cnpj': fields.String(required=True),
 })
+
+obter_empresa_setor_model = api_ms.model('Obter Empresa', {
+    'id': fields.Integer(readonly=True),
+    'nome_fantasia': fields.String(required=True),
+    'razao_social': fields.String(required=True),
+    'cnpj': fields.String(required=True),
+})

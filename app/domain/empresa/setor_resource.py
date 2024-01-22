@@ -1,0 +1,37 @@
+#app/domain/setor/setor_resource.py
+from flask import request
+from flask_jwt_extended import jwt_required
+from flask_restx import Namespace, Resource, fields
+from app.utils.extensions import db
+from app.infraestructure.orm.setor import Setor as DBSetor
+from app.domain.empresa.setor_service import inserir_setor, obter_setores, obter_setor_por_empresa_id
+from app.domain.empresa.setor_model import (inserir_setor_model,
+                                           obter_setor_model,
+                                           obter_setor_por_empresa_model)
+from app.domain.empresa import empresa_ns
+
+
+@empresa_ns.route('/setor')
+@empresa_ns.doc({'setor'})
+class Setor(Resource):
+
+    @empresa_ns.marshal_list_with(obter_setor_model)
+    def get(self):
+        _setor = obter_setores()
+        return _setor
+
+    @empresa_ns.expect(inserir_setor_model)
+    @empresa_ns.marshal_with(inserir_setor_model, code=201)
+    def post(self):
+        data = request.json
+        _setor = inserir_setor(data['nome'], data['id_empresa'])
+        return _setor, 201
+
+
+@empresa_ns.route('/setor/<int:id_empresa>')
+class SetorEmpresaId(Resource):
+
+    @empresa_ns.marshal_with(obter_setor_por_empresa_model)
+    def get(self, id_empresa):
+        _setor = DBSetor.query.filter_by(id_empresa=id_empresa).all()
+        return _setor
