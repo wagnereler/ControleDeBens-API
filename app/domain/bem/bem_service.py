@@ -4,21 +4,26 @@ from app.utils.extensions import db
 from datetime import datetime, date
 
 def inserir_bem(id_empresa: int,
+                id_setor: int,
                 nome: str,
                 plaqueta: str,
-                data_compra: date,
-                data_tombamento: datetime,
-                data_baixa: datetime,
+                data_compra: str,
+                data_tombamento: str,
+                data_baixa: str,
                 valor_compra: float,
                 valor_depreciado: float,
                 valor_contabil: float):
     bem = Bem()
     bem.id_empresa = id_empresa
+    bem.id_setor = id_setor
     bem.nome = nome
     bem.plaqueta = plaqueta
-    bem.data_compra = data_compra
-    bem.data_tombamento = data_tombamento
-    bem.data_baixa = data_baixa
+    bem.data_compra = datetime.strptime(data_compra, "%Y-%m-%d").date()
+    bem.data_tombamento = datetime.strptime(data_tombamento, "%Y-%m-%d %H:%M").date()
+    if data_baixa == None:
+        data_baixa
+    else:
+        datetime.strptime(data_baixa, "%Y-%m-%d %H:%M")
     bem.valor_compra = valor_compra
     bem.valor_depreciado = valor_depreciado
     bem.valor_contabil = valor_contabil

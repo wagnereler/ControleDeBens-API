@@ -19,6 +19,11 @@ obter_empresa_model = api_ms.model('Obter Empresa', {
     'cnpj': fields.String(required=True),
 })
 
+obter_empresa_bem_model = api_ms.model('ObterEmpresaBem', {
+    'id': fields.Integer(readonly=True),
+    'nome_fantasia': fields.String(required=True),
+})
+
 obter_empresa_setor_model = api_ms.model('Obter Empresa', {
     'id': fields.Integer(readonly=True),
     'nome_fantasia': fields.String(required=True),

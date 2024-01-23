@@ -17,10 +17,10 @@ class Bem(Base):
     plaqueta = Column(String(30))
     data_compra = Column(Date)
     data_tombamento = Column(Date)
-    data_baixa = Column(Date)
+    data_baixa = Column(Date, nullable=True)
     valor_compra = Column(Numeric(10, 2))
-    valor_depreciado = Column(Numeric(10, 2))
-    valor_contabil = Column(Numeric(10, 2))
+    valor_depreciado = Column(Numeric(10, 2), nullable=True)
+    valor_contabil = Column(Numeric(10, 2), nullable=True)
 
     empresa = relationship(Empresa)
     setor = relationship(Setor)

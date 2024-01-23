@@ -14,6 +14,11 @@ obter_setor_model = api_ms.model('Obter Setor', {
 
 })
 
+obter_setor_bem_model = api_ms.model('Obter Setor', {
+    'id': fields.Integer(readonly=True),
+    'nome': fields.String(required=False),
+})
+
 obter_setor_por_empresa_model = api_ms.model('ObterSetorPorEmpresa', {
     'id': fields.Integer(readonly=True),
     'nome': fields.String(required=False),
