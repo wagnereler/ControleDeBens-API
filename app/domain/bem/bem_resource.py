@@ -1,9 +1,10 @@
+# app/domain/bem/bem_resource.py
 from flask import request
 from flask_jwt_extended import jwt_required
-from flask_restx import Namespace, Resource, fields
-from app.utils.extensions import db
-from app.domain.bem.bem_service import inserir_bem, obter_bem_por_id, obter_bens
-from app.domain.bem.bem_model import inserir_bem_model, obter_bens_model
+from flask_restx import Resource
+
+from app.domain.bem.bem_service import inserir_bem, obter_bens, listar_bens_por_empresa
+from app.domain.bem.bem_model import inserir_bem_model, obter_bens_model, listar_bens_por_empresa_model
 from app.domain.bem import bens_ns
 
 
@@ -31,6 +32,15 @@ class Bem(Resource):
                           data['valor_contabil']
                           )
         return bem, 201
+
+
+@bens_ns.route('/<int:id_empresa>')
+class ListarBensPorEmpresaId(Resource):
+
+    @bens_ns.marshal_with(listar_bens_por_empresa_model)
+    def get(self, id_empresa):
+        return listar_bens_por_empresa(id_empresa)
+
 
 """
 @bens_ns.route('/bem/<int:id>')

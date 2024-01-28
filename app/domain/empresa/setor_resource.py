@@ -3,11 +3,11 @@ from flask import request
 from flask_jwt_extended import jwt_required
 from flask_restx import Namespace, Resource, fields
 from app.utils.extensions import db
-from app.infraestructure.orm.setor import Setor as DBSetor
+from app.infraestructure.orm.setor import Setor as OrmSetor
 from app.domain.empresa.setor_service import inserir_setor, obter_setores, obter_setor_por_empresa_id
 from app.domain.empresa.setor_model import (inserir_setor_model,
-                                           obter_setor_model,
-                                           obter_setor_por_empresa_model)
+                                            obter_setor_model,
+                                            listar_setores_por_empresa_model)
 from app.domain.empresa import empresa_ns
 
 
@@ -29,9 +29,9 @@ class Setor(Resource):
 
 
 @empresa_ns.route('/setor/<int:id_empresa>')
-class SetorEmpresaId(Resource):
+class ListarSetoresPorEmpresaId(Resource):
 
-    @empresa_ns.marshal_with(obter_setor_por_empresa_model)
+    @empresa_ns.marshal_with(listar_setores_por_empresa_model)
     def get(self, id_empresa):
-        _setor = DBSetor.query.filter_by(id_empresa=id_empresa).all()
+        _setor = OrmSetor.query.filter_by(id_empresa=id_empresa).all()
         return _setor

@@ -19,7 +19,7 @@ obter_setor_bem_model = api_ms.model('Obter Setor', {
     'nome': fields.String(required=False),
 })
 
-obter_setor_por_empresa_model = api_ms.model('ObterSetorPorEmpresa', {
+listar_setores_por_empresa_model = api_ms.model('ObterSetorPorEmpresa', {
     'id': fields.Integer(readonly=True),
     'nome': fields.String(required=False),
     'empresa': fields.List(fields.Nested(obter_empresa_setor_model, required=True))
