@@ -8,12 +8,13 @@ def get_versao():
     return versao
 
 versao_model = api_ms.model('Versao', {
-    'versao': fields.String(readonly=True),
+    'versao': fields.String(),
 })
 
 @api_ms.route('/')
 class Versao(Resource):
 
-    @api_ms.marshal_list_with(versao_model)
+    @api_ms.marshal_with(versao_model)
     def get(self):
         get_versao()
+        return {'versao': get_versao()}

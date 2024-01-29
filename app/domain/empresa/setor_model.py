@@ -25,3 +25,5 @@ listar_setores_por_empresa_model = api_ms.model('ObterSetorPorEmpresa', {
     'empresa': fields.List(fields.Nested(obter_empresa_setor_model, required=True))
 
 })
+
+

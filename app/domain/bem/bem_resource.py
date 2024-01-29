@@ -36,6 +36,7 @@ class Bem(Resource):
 
 @bens_ns.route('/<int:id_empresa>')
 class ListarBensPorEmpresaId(Resource):
+    "Listar Bens Por Empesa"
 
     @bens_ns.marshal_with(listar_bens_por_empresa_model)
     def get(self, id_empresa):
