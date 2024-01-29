@@ -19,6 +19,8 @@ from app.infraestructure.orm.usuario import Usuario
 from app.infraestructure.orm.usuario_papel import UsuarioPapel
 from app.infraestructure.orm.usuario_setor import UsuarioSetor
 from app.infraestructure.orm.usuario_telefone import UsuarioTelefone
+from app.infraestructure.orm.controle_versao_api import ControleVersaoAPI
+
 class ImportModels:
     bem = Bem
     empresa = Empresa
@@ -40,3 +42,4 @@ class ImportModels:
     usuarioPapel = UsuarioPapel
     usuarioSetor = UsuarioSetor
     usuarioTelefone = UsuarioTelefone
+    controleVersaoAPI = ControleVersaoAPI

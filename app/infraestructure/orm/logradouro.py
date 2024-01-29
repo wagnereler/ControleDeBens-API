@@ -11,5 +11,5 @@ class Logradouro(Base):
     __tablename__ = 'logradouro'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    nome = Column(String, unique=True, nullable=False)
+    nome = Column(String, nullable=False)
     ativo = Column(Boolean, nullable=False)
