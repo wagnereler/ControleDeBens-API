@@ -1,5 +1,5 @@
 # app/domain/gerais/municipio_service.py
-from app.infraestructure.orm.municipio import Municipio
+from app.infraestructure.orm.controlde_bens.municipio import Municipio
 from app.utils.extensions import db
 
 

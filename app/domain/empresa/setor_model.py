@@ -1,3 +1,4 @@
+#app/domain/empresa/setor_model.py
 from flask_restx import fields
 from app.domain import api_ms
 from app.domain.empresa.empresa_model import obter_empresa_setor_model

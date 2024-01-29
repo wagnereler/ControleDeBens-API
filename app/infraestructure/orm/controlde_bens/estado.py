@@ -1,5 +1,5 @@
 # coding: utf-8
-#app/infraestructure/estado.py
+#app/infraestructure/orm/controle_bens/estado.py
 from sqlalchemy import Column, Integer, CHAR, String
 from app.utils.extensions import db
 

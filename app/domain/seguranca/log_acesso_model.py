@@ -1,3 +1,4 @@
+#app/domain/seguranca/log_acesso_model.py
 from flask_restx import fields
 from app.domain import api_ms
 inserir_log_acesso = api_ms.model('LogAcesso', {

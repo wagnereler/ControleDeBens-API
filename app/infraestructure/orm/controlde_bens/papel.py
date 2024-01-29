@@ -1,5 +1,5 @@
 # coding: utf-8
-# app/infraestructure/papel.py
+# app/infraestructure/orm/controle_bens/papel.py
 from sqlalchemy import Column, Integer, String
 from app.utils.extensions import db
 

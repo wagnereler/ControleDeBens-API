@@ -1,11 +1,11 @@
 # coding: utf-8
-#app/infraestructure/log_acao.py
-from sqlalchemy import Column, Integer, String, Date, ForeignKey, CheckConstraint
+#app/infraestructure/orm/controle_bens/log_acao.py
+from sqlalchemy import Column, Integer, String, Date, ForeignKey
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db
-from app.infraestructure.orm.usuario import Usuario
-from app.infraestructure.orm.empresa import Empresa
-from app.infraestructure.orm.rotina import Rotina
+from app.infraestructure.orm.controlde_bens.usuario import Usuario
+from app.infraestructure.orm.controlde_bens.empresa import Empresa
+from app.infraestructure.orm.controlde_bens.rotina import Rotina
 
 Base = db.Model
 

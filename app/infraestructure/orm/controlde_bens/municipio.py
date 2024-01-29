@@ -1,9 +1,9 @@
 # coding: utf-8
-# app/infraestructure/municipio.py
+# app/infraestructure/orm/controle_bens/municipio.py
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db
-from app.infraestructure.orm.estado import Estado
+from app.infraestructure.orm.controlde_bens.estado import Estado
 
 Base = db.Model
 

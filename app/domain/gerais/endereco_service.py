@@ -1,5 +1,5 @@
 # app/domain/gerais/endereco_service.py
-from app.infraestructure.orm.endereco import Endereco
+from app.infraestructure.orm.controlde_bens.endereco import Endereco
 from app.utils.extensions import db
 
 

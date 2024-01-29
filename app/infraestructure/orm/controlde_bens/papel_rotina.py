@@ -1,10 +1,10 @@
 # coding: utf-8
-# app/infraestructure/papel_rotina.py
+# app/infraestructure/orm/controle_bens/papel_rotina.py
 from sqlalchemy import Column, Integer, ForeignKey
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db
-from app.infraestructure.orm.papel import Papel
-from app.infraestructure.orm.rotina import Rotina
+from app.infraestructure.orm.controlde_bens.papel import Papel
+from app.infraestructure.orm.controlde_bens.rotina import Rotina
 
 Base = db.Model
 

@@ -1,5 +1,5 @@
 # app/domain/gerais/estado_service.py
-from app.infraestructure.orm.estado import Estado
+from app.infraestructure.orm.controlde_bens.estado import Estado
 from app.utils.extensions import db
 
 

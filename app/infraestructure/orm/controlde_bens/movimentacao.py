@@ -1,12 +1,12 @@
 # coding: utf-8
-# app/infraestructure/movimentacao.py
+# app/infraestructure/orm/controle_bens/movimentacao.py
 from sqlalchemy import Column, Integer, Date, ForeignKey
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db
-from app.infraestructure.orm.bem import Bem
-from app.infraestructure.orm.empresa import Empresa
-from app.infraestructure.orm.setor import Setor
-from app.infraestructure.orm.usuario import Usuario
+from app.infraestructure.orm.controlde_bens.bem import Bem
+from app.infraestructure.orm.controlde_bens.empresa import Empresa
+from app.infraestructure.orm.controlde_bens.setor import Setor
+from app.infraestructure.orm.controlde_bens.usuario import Usuario
 
 Base = db.Model
 

@@ -1,3 +1,4 @@
+#app/domain/gerais/logradouro_model.py
 from flask_restx import fields
 from app.domain import api_ms
 

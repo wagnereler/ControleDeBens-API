@@ -1,5 +1,5 @@
 # app/domain/gerais/logradouro_service.py
-from app.infraestructure.orm.logradouro import Logradouro
+from app.infraestructure.orm.controlde_bens.logradouro import Logradouro
 from app.utils.extensions import db
 
 

@@ -1,7 +1,7 @@
 #app/domain/empresa/empresa_service.py
-from app.infraestructure.orm.empresa import Empresa
+from app.infraestructure.orm.controlde_bens.empresa import Empresa
 from app.utils.extensions import db
-from datetime import datetime, date
+
 
 def inserir_empresa(nome_fantasia: str,
               razao_social: str,

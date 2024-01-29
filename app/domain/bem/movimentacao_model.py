@@ -1,3 +1,4 @@
+#app/domain/bem/movimentacao_model.py
 from flask_restx import fields
 from app.domain import api_ms
 insert_movimentacao = api_ms.model('Movimentacao', {

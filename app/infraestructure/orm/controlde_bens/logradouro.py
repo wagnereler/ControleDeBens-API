@@ -1,5 +1,5 @@
 # coding: utf-8
-# app/infraestructure/logradouro.py
+# app/infraestructure/orm/controle_bens/logradouro.py
 
 from datetime import datetime
 from sqlalchemy import Column, String, Boolean, Integer

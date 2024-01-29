@@ -1,5 +1,5 @@
 # app/domain/gerais/telefone_service.py
-from app.infraestructure.orm.telefone import Telefone
+from app.infraestructure.orm.controlde_bens.telefone import Telefone
 from app.utils.extensions import db
 
 

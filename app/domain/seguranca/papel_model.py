@@ -1,3 +1,4 @@
+#app/domain/seguranca/papel_model.py
 from flask_restx import fields
 from app.domain import api_ms
 inserir_papel = api_ms.model('Papel', {

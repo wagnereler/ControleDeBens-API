@@ -1,7 +1,7 @@
-#app/domain/setor/setor_service.py
-from app.infraestructure.orm.setor import Setor
+#app/domain/empresa/setor_service.py
+from app.infraestructure.orm.controlde_bens.setor import Setor
 from app.utils.extensions import db
-from datetime import datetime, date
+
 
 def inserir_setor(nome: str, id_empresa: int):
     setor = Setor()

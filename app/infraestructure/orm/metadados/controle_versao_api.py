@@ -1,5 +1,5 @@
 # coding: utf-8
-# app/infraestructure/orm/versao_api.py
+# app/infraestructure/orm/metadados/versao_api.py
 from sqlalchemy import Column, String, Text, Integer, Date
 from app.utils.extensions import db
 

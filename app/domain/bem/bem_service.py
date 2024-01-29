@@ -1,7 +1,7 @@
 #app/domain/bem/bem_service.py
-from app.infraestructure.orm.bem import Bem as OrmBem
-from app.infraestructure.orm.setor import Setor as OrmSetor
-from app.infraestructure.orm.empresa import Empresa as OrmEmpesa
+from app.infraestructure.orm.controlde_bens.bem import Bem as OrmBem
+from app.infraestructure.orm.controlde_bens.setor import Setor as OrmSetor
+from app.infraestructure.orm.controlde_bens.empresa import Empresa as OrmEmpesa
 from app.utils.extensions import db
 from datetime import datetime
 

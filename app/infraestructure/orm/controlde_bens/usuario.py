@@ -1,9 +1,9 @@
 # coding: utf-8
-# app/infraestructure/usuario.py
+# app/infraestructure/orm/controle_bens/usuario.py
 from sqlalchemy import Column, Integer, String, Date, ForeignKey
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db
-from app.infraestructure.orm.endereco import Endereco
+from app.infraestructure.orm.controlde_bens.endereco import Endereco
 
 Base = db.Model
 

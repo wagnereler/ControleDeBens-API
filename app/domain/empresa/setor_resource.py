@@ -1,10 +1,8 @@
-#app/domain/setor/setor_resource.py
+#app/domain/empresa/setor_resource.py
 from flask import request
-from flask_jwt_extended import jwt_required
-from flask_restx import Namespace, Resource, fields
-from app.utils.extensions import db
-from app.infraestructure.orm.setor import Setor as OrmSetor
-from app.domain.empresa.setor_service import inserir_setor, obter_setores, obter_setor_por_empresa_id
+from flask_restx import Resource
+from app.infraestructure.orm.controlde_bens.setor import Setor as OrmSetor
+from app.domain.empresa.setor_service import inserir_setor, obter_setores
 from app.domain.empresa.setor_model import (inserir_setor_model,
                                             obter_setor_model,
                                             listar_setores_por_empresa_model)

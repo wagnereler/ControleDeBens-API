@@ -1,5 +1,5 @@
 # coding: utf-8
-# app/infraestructure/rotina.py
+# app/infraestructure/orm/controle_bens/rotina.py
 from sqlalchemy import Column, Integer, String, Boolean
 from app.utils.extensions import db
 

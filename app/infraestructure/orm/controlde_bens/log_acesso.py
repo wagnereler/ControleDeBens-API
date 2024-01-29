@@ -1,10 +1,10 @@
 # coding: utf-8
-#app/infraestructure/log_acesso.py
+#app/infraestructure/orm/controle_bens/log_acesso.py
 from sqlalchemy import Column, Integer, Date, ForeignKey
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db
-from app.infraestructure.orm.usuario import Usuario
-from app.infraestructure.orm.empresa import Empresa
+from app.infraestructure.orm.controlde_bens.usuario import Usuario
+from app.infraestructure.orm.controlde_bens.empresa import Empresa
 Base = db.Model
 
 class LogAcesso(Base):

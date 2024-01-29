@@ -1,9 +1,9 @@
 # coding: utf-8
-# app/infraestructure/setor.py
+# app/infraestructure/orm/controle_bens/setor.py
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db
-from app.infraestructure.orm.empresa import Empresa
+from app.infraestructure.orm.controlde_bens.empresa import Empresa
 
 Base = db.Model
 

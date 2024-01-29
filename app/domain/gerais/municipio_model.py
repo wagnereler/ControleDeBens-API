@@ -1,3 +1,4 @@
+#app/domain/gerais/municipio_model.py
 from flask_restx import fields
 from app.domain import api_ms
 insert_municipio_model = api_ms.model('Municipio', {

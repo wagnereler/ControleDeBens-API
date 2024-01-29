@@ -1,10 +1,10 @@
 # coding: utf-8
-#app/infraestructure/empresa.py
+#app/infraestructure/orm/controle_bens/empresa.py
 from sqlalchemy import Column, Integer, String, Date, ForeignKey, Numeric
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db
-from app.infraestructure.orm.empresa import Empresa
-from app.infraestructure.orm.setor import Setor
+from app.infraestructure.orm.controlde_bens.empresa import Empresa
+from app.infraestructure.orm.controlde_bens.setor import Setor
 
 Base = db.Model
 

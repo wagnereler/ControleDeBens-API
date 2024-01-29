@@ -23,3 +23,20 @@ drop table municipio;
 drop table estado;
 drop table papel;
 drop table alembic_version;
+
+*** Para utilizar multiplos bancos de dados:
+--Deve ser configurado no arquivo config.py ou .flask a string de conexão juntamente em um dicioário
+setando na da variável SQLALCHEMY_BINDS
+
+    SQLALCHEMY_BINDS = {
+        'metadados': f'sqlite:///{basedir}/infraestructure/data/metadados.db',
+    }
+
+--Para iniciar o processo de migrate deve excluir a pasta e iniciar com o seguinte comando
+- flask db init --multdb
+na modelagem do orm da classe do banco bind deve ser decorado com o marcardor __bind_key__
+seguindo com o nome da chave do dicionário para o banco que esta configurado em bind
+
+class ControleVersaoAPI(Base):
+    __tablename__ = 'controle_versao_api'
+    __bind_key__ = 'metadados'

@@ -12,15 +12,6 @@ class Config:
     JWT_ACCESS_TOKEN_EXPIRES = int(environ.get('JWT_ACCESS_TOKEN_EXPIRES', 3600))
     FLASK_APP = environ.get('FLASK_APP')
     FLASK_DEBUG = environ.get('FLASK_DEBUG')
-    #rescentemente incluir essa instrução abaixo, na esperanca de criar um novo banco
     SQLALCHEMY_BINDS = {
-        'metadado': f'sqlite:///{basedir}/infraestructure/data/metadado.db',
+        'metadados': f'sqlite:///{basedir}/infraestructure/data/metadados.db',
     }
-
-
-"""    CASO TENHA NECESSIDADE DE USAR OUTRO BANCOS PARA CONEXÃO
-    SQLALCHEMY_BINDS = {
-        'outro_banco': os.environ.get('OUTRO_BANCO_URI', 'sqlite:///outro_banco.db'),
-        'terceiro_banco': os.environ.get('TERCEIRO_BANCO_URI', 'postgresql://usuario:senha@localhost/terceiro_banco')
-    }
-"""

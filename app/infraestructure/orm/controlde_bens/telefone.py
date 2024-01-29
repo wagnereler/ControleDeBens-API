@@ -1,5 +1,5 @@
 # coding: utf-8
-# app/infraestructure/orm/telefone.py
+# app/infraestructure/orm/controle_bens/telefone.py
 from sqlalchemy import Column, Integer, String, text
 from app.utils.extensions import db
 

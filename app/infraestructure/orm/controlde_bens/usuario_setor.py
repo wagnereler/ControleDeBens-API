@@ -1,10 +1,10 @@
 # coding: utf-8
-# app/infraestructure/usuario_setor.py
+# app/infraestructure/orm/controle_bens/usuario_setor.py
 from sqlalchemy import Column, Integer, ForeignKey
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db
-from app.infraestructure.orm.setor import Setor
-from app.infraestructure.orm.usuario import Usuario
+from app.infraestructure.orm.controlde_bens.setor import Setor
+from app.infraestructure.orm.controlde_bens.usuario import Usuario
 
 Base = db.Model
 

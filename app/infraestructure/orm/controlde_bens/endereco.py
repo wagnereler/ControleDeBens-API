@@ -1,11 +1,11 @@
 # coding: utf-8
-#app/infraestructure/orm/endereco.py
+#app/infraestructure/orm/controle_bens/endereco.py
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from app.utils.extensions import db
-from app.infraestructure.orm.logradouro import Logradouro
-from app.infraestructure.orm.municipio import Municipio
-from app.infraestructure.orm.estado import Estado
+from app.infraestructure.orm.controlde_bens.logradouro import Logradouro
+from app.infraestructure.orm.controlde_bens.municipio import Municipio
+from app.infraestructure.orm.controlde_bens.estado import Estado
 
 Base = db.Model
 
