@@ -26,6 +26,7 @@ from app.infraestructure.orm.controlde_bens.usuario_telefone import UsuarioTelef
 from app.infraestructure.orm.metadados.controle_versao import ControleVersao
 from app.infraestructure.orm.metadados.funcao import Funcao
 from app.infraestructure.orm.metadados.responsavel import Responsavel
+from app.infraestructure.orm.metadados.modulo import Modulo
 
 class ImportOrm:
     bem = Bem
@@ -55,3 +56,4 @@ class ImportOrmMetadados:
     controleVersaoAPI = ControleVersao
     funcao = Funcao
     responsavel = Responsavel
+    modulo = Modulo
