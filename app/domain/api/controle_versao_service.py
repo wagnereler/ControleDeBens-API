@@ -3,6 +3,7 @@ from flask_restx import Namespace, Resource, fields
 from app.infraestructure.orm.metadados.funcao import Funcao as OrmFuncao
 from app.infraestructure.orm.metadados.responsavel import Responsavel as OrmResponsavel
 from app.infraestructure.orm.metadados.controle_versao import ControleVersao as OrmControleVersao
+from app.infraestructure.orm.metadados.versao import Versao as OrmVersao
 from app.utils.extensions import db
 from datetime import datetime
 
@@ -52,3 +53,20 @@ def inserir_versao(id_responsavel: int,
 def listar_versoes():
     listar_versoes = OrmControleVersao()
     return listar_versoes.query.all()
+
+def controle_versao(major: int, minor: int, patch: int):
+    ultima_versao = OrmVersao()
+    ultima_versao.query.filter_by(id=1)
+    if major == True:
+        ultima_versao.major += 1
+        ultima_versao.minor = 0
+        ultima_versao.patch = 0
+    if minor == True:
+        ultima_versao.minor += 1
+        ultima_versao.patch = 0
+    if patch == True:
+        ultima_versao.patch += 1
+
+    db.session.commit(ultima_versao)
+    nova_versa = f'{str(ultima_versao.major)}.{str(ultima_versao.minor)}.{str(ultima_versao.patch)}'
+    return nova_versa

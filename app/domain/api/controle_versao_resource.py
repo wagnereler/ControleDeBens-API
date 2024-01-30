@@ -1,5 +1,5 @@
 #app/domain/api/controle_versao_resource.py
-from flask_restx import Namespace, Resource, fields
+from flask_restx import Resource, abort
 from flask import request
 from app.domain.api import api_ms
 from app.domain.api.controle_versao_model import (versao_model,
@@ -16,7 +16,8 @@ from app.domain.api.controle_versao_service import (get_versao,
                                                     listar_responsaveis,
                                                     inserir_responsavel,
                                                     inserir_versao,
-                                                    listar_versoes
+                                                    listar_versoes,
+                                                    controle_versao
                                                     )
 
 
@@ -70,12 +71,22 @@ class Versao(Resource):
     @api_ms.marshal_with(listar_versoes_model)
     def post(self):
         data = request.json
-        versao = inserir_versao(
-            data['id_responsavel'],
-            data['versao'],
-            data['descricao'],
-            data['data_atualizacao']
-        )
+
+        major = data.get('major_version')
+        minor = data.get('minor_version')
+        patch = data.get('patch_version')
+
+        if [major, minor, patch].count(True) != 1:
+            abort(400, 'Um dos campos major_version, minor_version, patch_version deve ser True')
+        else:
+            nova_versao = controle_versao(major, minor, patch)
+
+            versao = inserir_versao(
+                data['id_responsavel'],
+                nova_versao,
+                data['descricao'],
+                data['data_atualizacao']
+            )
         return versao, 201
 
     @api_ms.marshal_list_with(listar_versoes_model)
