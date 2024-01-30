@@ -1,7 +1,7 @@
 #app/__init__.py
 from flask import Flask
 from app.utils.extensions import api, db, jwt, migrate
-from app.utils.import_orm import ImportOrm, ImportOrmMetadado
+from app.utils.import_orm import ImportOrm, ImportOrmMetadados
 from app.config import Config
 from app.utils.import_resource import model_ms, bens_ns, empresa_ns, gerais_ns, api_ms
 

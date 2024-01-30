@@ -24,6 +24,8 @@ from app.infraestructure.orm.controlde_bens.usuario_telefone import UsuarioTelef
 
 #imports relacionado ao banco de dados metadados
 from app.infraestructure.orm.metadados.controle_versao_api import ControleVersaoAPI
+from app.infraestructure.orm.metadados.funcao import Funcao
+from app.infraestructure.orm.metadados.responsavel import Responsavel
 
 class ImportOrm:
     bem = Bem
@@ -49,5 +51,7 @@ class ImportOrm:
 
 
 
-class ImportOrmMetadado:
+class ImportOrmMetadados:
     controleVersaoAPI = ControleVersaoAPI
+    funcao = Funcao
+    responsavel = Responsavel

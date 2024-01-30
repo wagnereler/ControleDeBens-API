@@ -7,5 +7,5 @@ SQLALCHEMY_TRACK_MODIFICATIONS=True
 JWT_SECRET_KEY=MinhaSenhaSecretaParaJWT
 JWT_ACCESS_TOKEN_EXPIRES=3600
 SQLALCHEMY_BINDS = {
-    'metadado': f'sqlite:///{basedir}/infraestructure/data/metadado.db',
+    'metadados': f'sqlite:///{basedir}/infraestructure/data/metadados.db',
 }
