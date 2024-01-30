@@ -1,7 +1,7 @@
 #app/domain/gerais/telefone_model.py
 from flask_restx import fields
-from app.domain import api_ms
-inserir_telefone_model = api_ms.model('Telefone', {
+from app.domain import model_ms
+inserir_telefone_model = model_ms.model('Telefone', {
     'id': fields.Integer(readonly=True),
     'ddi': fields.String(required=False),
     'ddd': fields.String(required=True),
@@ -9,7 +9,7 @@ inserir_telefone_model = api_ms.model('Telefone', {
     'tipo': fields.Integer(required=True),
 })
 
-obter_telefones_model = api_ms.model('Obter Telefones', {
+obter_telefones_model = model_ms.model('Obter Telefones', {
     'id': fields.Integer(readonly=True),
     'ddi': fields.String(required=False),
     'ddd': fields.String(required=False),

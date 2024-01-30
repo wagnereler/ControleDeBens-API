@@ -1,10 +1,10 @@
 #app/domain/bem/bem_model.py
 from flask_restx import fields
-from app.domain import api_ms
+from app.domain import model_ms
 from app.domain.empresa.setor_model import obter_setor_bem_model
 from app.domain.empresa.empresa_model import obter_empresa_bem_model
 
-inserir_bem_model = api_ms.model('Bem', {
+inserir_bem_model = model_ms.model('Bem', {
     'id_empresa': fields.Integer(required=True),
     'id_setor': fields.Integer(required=True),
     'nome': fields.String(required=True),
@@ -17,7 +17,7 @@ inserir_bem_model = api_ms.model('Bem', {
     'valor_contabil': fields.Float(required=False)
 })
 
-obter_bens_model = api_ms.model('Obter Bem', {
+obter_bens_model = model_ms.model('Obter Bem', {
     'id': fields.Integer(readonly=True),
     'empresa': fields.Nested(obter_empresa_bem_model, attribute='empresa'),
     'setor': fields.Nested(obter_setor_bem_model, attribute='setor'),
@@ -33,7 +33,7 @@ obter_bens_model = api_ms.model('Obter Bem', {
 
 
 # Definindo o modelo para 'bens'
-bens_model = api_ms.model('Bens', {
+bens_model = model_ms.model('Bens', {
     'id_bem': fields.Integer,
     'id_empresa': fields.Integer,
     'id_setor': fields.Integer,
@@ -48,7 +48,7 @@ bens_model = api_ms.model('Bens', {
 })
 
 # Definindo o modelo para 'setores'
-setores_model = api_ms.model('Setores', {
+setores_model = model_ms.model('Setores', {
     'id_setor': fields.Integer,
     'id_empresa': fields.Integer,
     'nome': fields.String,
@@ -56,7 +56,7 @@ setores_model = api_ms.model('Setores', {
 })
 
 # Definindo o modelo principal 'ListarBensPorEmpresa'
-listar_bens_por_empresa_model = api_ms.model('ListarBensPorEmpresa', {
+listar_bens_por_empresa_model = model_ms.model('ListarBensPorEmpresa', {
     'id_empresa': fields.Integer,
     'nome_fantasia': fields.String,
     'razao_social':  fields.String,
