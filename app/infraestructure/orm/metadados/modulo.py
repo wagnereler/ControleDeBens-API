@@ -1,4 +1,4 @@
-#app/infraestructure/orm/metadados/funcao.py
+#app/infraestructure/orm/metadados/modulo.py
 from sqlalchemy import Column, String,  Integer
 from app.utils.extensions import db
 

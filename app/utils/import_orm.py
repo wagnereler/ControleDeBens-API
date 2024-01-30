@@ -27,6 +27,7 @@ from app.infraestructure.orm.metadados.controle_versao import ControleVersao
 from app.infraestructure.orm.metadados.funcao import Funcao
 from app.infraestructure.orm.metadados.responsavel import Responsavel
 from app.infraestructure.orm.metadados.modulo import Modulo
+from app.infraestructure.orm.metadados.versao import Versao
 
 class ImportOrm:
     bem = Bem
@@ -57,3 +58,4 @@ class ImportOrmMetadados:
     funcao = Funcao
     responsavel = Responsavel
     modulo = Modulo
+    versao = Versao
