@@ -27,3 +27,18 @@ inserir_responsavel_model = api_ms.model('InserirResponsavel', {
     'nome': fields.String(required=True),
     'email': fields.String(required=True),
 })
+
+listar_versoes_model = api_ms.model('ListarVersoes', {
+    'id': fields.Integer,
+    'id_responsavel': fields.Integer,
+    'versao': fields.String,
+    'descricao': fields.String,
+    'data_atualizacao': fields.DateTime,
+})
+
+inserir_versao_model = api_ms.model('InserirVersao', {
+    'id_responsavel': fields.Integer(required=True),
+    'versao': fields.String(required=True),
+    'descricao': fields.String(required=True),
+    'data_atualizacao': fields.DateTime(required=True),
+})

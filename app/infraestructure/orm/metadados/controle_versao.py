@@ -1,5 +1,5 @@
 # coding: utf-8
-# app/infraestructure/orm/metadados/controle_versao_api.py
+# app/infraestructure/orm/metadados/controle_versao.py
 from sqlalchemy import Column, String, Text, Integer, Date, ForeignKey
 from sqlalchemy.orm import relationship
 
@@ -9,7 +9,7 @@ from app.infraestructure.orm.metadados.responsavel import Responsavel
 Base = db.Model
 
 
-class ControleVersaoAPI(Base):
+class ControleVersao(Base):
     __tablename__ = 'controle_versao_api'
     __bind_key__ = 'metadados'
 

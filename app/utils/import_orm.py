@@ -23,7 +23,7 @@ from app.infraestructure.orm.controlde_bens.usuario_setor import UsuarioSetor
 from app.infraestructure.orm.controlde_bens.usuario_telefone import UsuarioTelefone
 
 #imports relacionado ao banco de dados metadados
-from app.infraestructure.orm.metadados.controle_versao_api import ControleVersaoAPI
+from app.infraestructure.orm.metadados.controle_versao import ControleVersao
 from app.infraestructure.orm.metadados.funcao import Funcao
 from app.infraestructure.orm.metadados.responsavel import Responsavel
 
@@ -52,6 +52,6 @@ class ImportOrm:
 
 
 class ImportOrmMetadados:
-    controleVersaoAPI = ControleVersaoAPI
+    controleVersaoAPI = ControleVersao
     funcao = Funcao
     responsavel = Responsavel

@@ -6,13 +6,18 @@ from app.domain.api.controle_versao_model import (versao_model,
                                                   inserir_funcao_model,
                                                   listar_funcoes_model,
                                                   inserir_responsavel_model,
-                                                  listar_responsaveis_model)
+                                                  listar_responsaveis_model,
+                                                  inserir_versao_model,
+                                                  listar_versoes_model)
 
 from app.domain.api.controle_versao_service import (get_versao,
                                                     inserir_funcao,
                                                     listar_funcoes,
                                                     listar_responsaveis,
-                                                    inserir_responsavel)
+                                                    inserir_responsavel,
+                                                    inserir_versao,
+                                                    listar_versoes
+                                                    )
 
 
 @api_ms.route('/')
@@ -56,3 +61,24 @@ class Responsavel(Resource):
     def get(self):
         responsavel = listar_responsaveis()
         return responsavel, 200
+
+
+@api_ms.route('/versao')
+class Versao(Resource):
+
+    @api_ms.expect(inserir_versao_model)
+    @api_ms.marshal_with(listar_versoes_model)
+    def post(self):
+        data = request.json
+        versao = inserir_versao(
+            data['id_responsavel'],
+            data['versao'],
+            data['descricao'],
+            data['data_atualizacao']
+        )
+        return versao, 201
+
+    @api_ms.marshal_list_with(listar_versoes_model)
+    def get(self):
+        versoes = listar_versoes()
+        return versoes, 200
