@@ -30,17 +30,19 @@ inserir_responsavel_model = api_ms.model('InserirResponsavel', {
 
 listar_versoes_model = api_ms.model('ListarVersoes', {
     'id': fields.Integer,
+    'id_modulo': fields.Integer,
     'id_responsavel': fields.Integer,
     'versao': fields.String,
     'descricao': fields.String,
-    'data_atualizacao': fields.DateTime,
+    'data_commit': fields.DateTime,
 })
 
 inserir_versao_model = api_ms.model('InserirVersao', {
     'id_responsavel': fields.Integer(required=True),
+    'id_modulo': fields.Integer(required=True),
     'major_version': fields.Boolean(required=True, default='false'),
     'minor_version': fields.Boolean(required=True, default='false'),
     'patch_version': fields.Boolean(required=True, default='false'),
     'descricao': fields.String(required=True),
-    'data_atualizacao': fields.DateTime(required=True),
+    'data_commit': fields.DateTime(required=True),
 })

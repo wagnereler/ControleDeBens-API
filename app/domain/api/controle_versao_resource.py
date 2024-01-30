@@ -83,9 +83,10 @@ class Versao(Resource):
 
             versao = inserir_versao(
                 data['id_responsavel'],
+                data['id_modulo'],
                 nova_versao,
                 data['descricao'],
-                data['data_atualizacao']
+                data['data_commit']
             )
         return versao, 201
 

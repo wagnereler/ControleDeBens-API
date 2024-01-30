@@ -20,10 +20,10 @@ def inserir_bem(id_empresa: int,
     bem.id_setor = id_setor
     bem.nome = nome
     bem.plaqueta = plaqueta
-    bem.data_compra = datetime.strptime(data_compra, "%Y-%m-%d").date()
-    bem.data_tombamento = datetime.strptime(data_tombamento, "%Y-%m-%d %H:%M").date()
+    bem.data_compra = datetime.strptime(data_compra, "%Y-%m-%d")
+    bem.data_tombamento = datetime.strptime(data_tombamento, "%Y-%m-%d %H:%M:%S")
     if data_baixa is not None:
-        bem.data_baixa = datetime.strptime(data_baixa, "%Y-%m-%d %H:%M").date()
+        bem.data_baixa = datetime.strptime(data_baixa, "%Y-%m-%d %H:%M:%S")
     bem.valor_compra = valor_compra
     bem.valor_depreciado = valor_depreciado
     bem.valor_contabil = valor_contabil
