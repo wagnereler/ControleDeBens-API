@@ -33,7 +33,7 @@ setando na da variável SQLALCHEMY_BINDS
     }
 
 --Para iniciar o processo de migrate deve excluir a pasta e iniciar com o seguinte comando
-- flask db init --multdb
+- flask db init --multidb
 na modelagem do orm da classe do banco bind deve ser decorado com o marcardor __bind_key__
 seguindo com o nome da chave do dicionário para o banco que esta configurado em bind
 
