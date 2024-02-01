@@ -116,11 +116,8 @@ def criar_versao_inicial():
 def verifica_cadastro_responsavel(nome: str, email, funcao=None):
     responsavel = OrmResponsavel()
     dados = responsavel.query.filter_by(email=email).first()
-    print('responsavel ', dados)
     if dados is None:
-        print('dados ', (nome, email, funcao))
         retorno = cadastrar_responsavel(nome, email, funcao)
-        print('retorno cadastro ', retorno)
         return retorno
     else:
         return dados.id

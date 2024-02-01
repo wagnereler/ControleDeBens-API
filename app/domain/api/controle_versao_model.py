@@ -35,6 +35,7 @@ listar_versoes_model = api_ms.model('ListarVersoes', {
     'versao': fields.String,
     'descricao': fields.String,
     'data_commit': fields.DateTime,
+    'git_sha': fields.String,
 })
 
 inserir_versao_model = api_ms.model('InserirVersao', {

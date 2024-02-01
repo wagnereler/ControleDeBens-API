@@ -15,9 +15,9 @@ class Config:
     SQLALCHEMY_BINDS = {
         'metadados': f'sqlite:///{basedir}/infraestructure/data/metadados.db',
     }
-    GIT_TOKEN = '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'
-    GIT_USER = 'wagnereler'
-    GIT_REPOSITORY = 'ControleDeBens-API'
-    # GIT_TOKEN = environ.get('GIT_TOKEN')
-    # GIT_USER = environ.get('GIT_USER')
-    # GIT_REPOSITORY = environ.get('GIT_REPOSITORY')
+    # GIT_TOKEN = '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'
+    # GIT_USER = 'wagnereler'
+    # GIT_REPOSITORY = 'ControleDeBens-API'
+    GIT_TOKEN = environ.get('GIT_TOKEN')
+    GIT_USER = environ.get('GIT_USER')
+    GIT_REPOSITORY = environ.get('GIT_REPOSITORY')
