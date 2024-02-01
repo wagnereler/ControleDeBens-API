@@ -75,18 +75,22 @@ class Versao(Resource):
         major = data.get('major_version')
         minor = data.get('minor_version')
         patch = data.get('patch_version')
+        git_sha = data.get('git_sha')
 
         if [major, minor, patch].count(True) != 1:
             abort(400, 'Um dos campos major_version, minor_version, patch_version deve ser True')
         else:
-            nova_versao = controle_versao(major, minor, patch)
+            nova_versao, data_commit, id_responsavel, comentario = (
+                controle_versao(major, minor, patch, git_sha)
+            )
 
             versao = inserir_versao(
-                data['id_responsavel'],
-                data['id_modulo'],
-                nova_versao,
-                data['descricao'],
-                data['data_commit']
+                id_responsavel=id_responsavel,
+                id_modulo=data['id_modulo'],
+                versao=nova_versao,
+                descricao=comentario,
+                data_commit=data_commit,
+                git_sha=git_sha
             )
         return versao, 201
 

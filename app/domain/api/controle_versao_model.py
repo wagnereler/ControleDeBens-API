@@ -38,11 +38,9 @@ listar_versoes_model = api_ms.model('ListarVersoes', {
 })
 
 inserir_versao_model = api_ms.model('InserirVersao', {
-    'id_responsavel': fields.Integer(required=True),
     'id_modulo': fields.Integer(required=True),
     'major_version': fields.Boolean(required=True, default='false'),
     'minor_version': fields.Boolean(required=True, default='false'),
     'patch_version': fields.Boolean(required=True, default='false'),
-    'descricao': fields.String(required=True),
-    'data_commit': fields.DateTime(required=True),
+    'git_sha': fields.String(required=True, description='Informar as 7 primeiras posiçoes so Sha'),
 })

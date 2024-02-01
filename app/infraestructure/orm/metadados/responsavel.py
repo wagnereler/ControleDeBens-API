@@ -11,7 +11,7 @@ class Responsavel(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     id_funcao = Column(ForeignKey(Funcao.id), nullable=False)
-    nome = Column(String(60), unique=True, nullable=False)
+    nome = Column(String(60), nullable=False)
     email = Column(String(100), unique=True, nullable=False)
 
     funcao = relationship(Funcao)
